@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="en" data-lang="en" translate="no" class="notranslate">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="google" content="notranslate">
+<meta name="robots" content="notranslate">
+<script>if(/[.]translate[.]goog$/.test(location.hostname))location.replace("https://"+location.hostname.slice(0,-15).replace(/--/g,"~").replace(/-/g,".").replace(/~/g,"-")+location.pathname+location.search.replace(/([?&])_x_tr_[^&]*/g,"$1").replace(/[?&]+$/,"").replace(/[?]&+/,"?")+location.hash)</script>
+<title>Hodie · Saint Expedite</title>
+<meta name="description" content="Saint Expedite, patron of urgent causes: catch the crow that says tomorrow, turn your list to today, set a red spirit house, count his days, and write your thanks. English and Thai.">
+<link rel="canonical" href="https://nanobotco.github.io/expedite/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="NaNoBotCo">
+<meta property="og:title" content="Hodie · วันนี้ — Saint Expedite">
+<meta property="og:description" content="The saint whose cross says today and whose crow says tomorrow. Catch the crow, set the red house, write your thanks. · นักบุญแห่งวันนี้">
+<meta property="og:url" content="https://nanobotco.github.io/expedite/">
+<meta property="og:image" content="https://nanobotco.github.io/expedite/card.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="An 1897 holy card of Saint Expedite holding a cross marked HODIE over a crow marked CRAS, with the words Hodie and วันนี้.">
+<meta property="og:locale" content="en_US"><meta property="og:locale:alternate" content="th_TH">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://nanobotco.github.io/expedite/card.jpg">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="alternate" type="text/plain" href="https://nanobotco.github.io/expedite/llms.txt" title="llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Noto+Serif+Thai:wght@400;600&family=Chonburi&display=swap">
+<style>
+:root{
+  --ground:#f6eddb; --panel:#fffaf0; --ink:#2a1a14; --muted:#6b5445; --rule:#e3d3b5;
+  --red:#b3121f; --red-lit:#d8282b; --gold:#9a6a0e; --gold-lit:#d9a73a; --leaf:#2f7a45;
+  --night:#150b24; --night2:#2a1340; --shadow:rgba(60,20,10,.18);
+  --display:"Cinzel","Chonburi",Georgia,serif; --body:"Source Serif 4","Noto Serif Thai",Georgia,serif;
+  --thai:"Noto Serif Thai",Tahoma,serif; --thai-display:"Chonburi","Noto Serif Thai",serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --ground:#120a1c; --panel:#1d1229; --ink:#f3e9d6; --muted:#bca98f; --rule:#37254b;
+  --red:#ec4b45; --red-lit:#ff6a5c; --gold:#e6b64a; --gold-lit:#f5d27a; --leaf:#5cc27a; --shadow:rgba(0,0,0,.45); color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --ground:#120a1c; --panel:#1d1229; --ink:#f3e9d6; --muted:#bca98f; --rule:#37254b;
+  --red:#ec4b45; --red-lit:#ff6a5c; --gold:#e6b64a; --gold-lit:#f5d27a; --leaf:#5cc27a; --shadow:rgba(0,0,0,.45); color-scheme:dark;}
+*{box-sizing:border-box}
+html{background:var(--ground)}
+body{margin:0;background:var(--ground);color:var(--ink);font:21px/1.7 var(--body);-webkit-text-size-adjust:100%}
+img{max-width:100%;display:block}
+a{color:var(--red)}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--gold-lit);outline-offset:3px}
+.th{font-family:var(--thai)}
+h1 .th,h2 .th,h3 .th,.btn .th{font-family:var(--thai-display);font-weight:400}
+[data-lang="en"] .th{display:none!important}
+[data-lang="th"] .en{display:none!important}
+[data-lang="both"] p.th,[data-lang="both"] li .th.b{color:var(--muted)}
+[data-lang="both"] h2 .th::before,[data-lang="both"] h3 .th::before{content:"· ";color:var(--gold)}
+.wrap{max-width:760px;margin:0 auto;padding-inline:16px}
+section{padding-block:56px 24px}
+h2{font:700 clamp(30px,6vw,44px)/1.15 var(--display);margin:0 0 14px;letter-spacing:.02em}
+h3{font:700 24px/1.3 var(--display);margin:0 0 6px}
+p{margin:0 0 14px}
+.tag{font:600 15px/1 var(--display);letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-right:.35em}
+.th .tag,.tag.th{text-transform:none;letter-spacing:0;font-family:var(--thai)}
+.small{font-size:17px;color:var(--muted)}
+.rule{height:28px;margin:28px auto 0;max-width:760px;background:
+  radial-gradient(circle at 50% 50%,var(--gold-lit) 0 4px,transparent 5px),
+  linear-gradient(var(--rule),var(--rule)) center/100% 1px no-repeat}
+
+/* top bar */
+.bar{position:fixed;inset:0 0 auto 0;z-index:20;display:flex;justify-content:flex-end;gap:8px;padding:10px 16px;pointer-events:none}
+.bar button{pointer-events:auto}
+.pill{font:600 16px/1 var(--body);border:1px solid rgba(255,236,190,.45);background:rgba(21,11,36,.55);color:#fbe9c4;border-radius:999px;padding:9px 14px;cursor:pointer;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.pill[aria-pressed="true"]{background:#b3121f;border-color:#f5d27a}
+
+/* hero */
+.hero{position:relative;min-height:100svh;background:radial-gradient(120% 90% at 50% 20%,#3a1650 0%,var(--night) 55%,#07030d 100%);color:#fbecd0;overflow:hidden;display:grid;place-items:center;padding:72px 16px 40px}
+#sky{position:absolute;inset:0;width:100%;height:100%}
+.hero-in{position:relative;z-index:2;display:grid;gap:18px;justify-items:center;text-align:center;max-width:760px}
+.card3d{width:min(62vw,300px);aspect-ratio:462/726;perspective:900px}
+.card3d .face{position:relative;width:100%;height:100%;border-radius:14px;overflow:hidden;transform-style:preserve-3d;box-shadow:0 0 0 2px #e6b64a,0 0 0 7px rgba(179,18,31,.85),0 30px 80px rgba(230,182,74,.35),0 0 120px rgba(216,40,43,.35);transition:transform .25s ease-out}
+.card3d img{width:100%;height:100%;object-fit:cover}
+.card3d .shine{position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,240,200,.55) 45%,rgba(255,180,120,.25) 52%,transparent 65%);mix-blend-mode:screen;opacity:.0;transform:translateX(-30%);pointer-events:none}
+.halo{position:absolute;left:50%;top:-6%;width:140%;aspect-ratio:1;transform:translateX(-50%);background:radial-gradient(circle,rgba(245,210,122,.35),transparent 60%);z-index:-1;pointer-events:none}
+h1{margin:0;font:900 clamp(64px,17vw,150px)/.9 var(--display);letter-spacing:.06em;background:linear-gradient(100deg,#f5d27a 0%,#fff3cf 30%,#d9a73a 50%,#fff3cf 70%,#f5d27a 100%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 4px 24px rgba(245,190,90,.35))}
+h1 .th{display:block;font-size:.42em;letter-spacing:0;margin-top:.2em;line-height:1.3}
+.lede{font-size:clamp(20px,4.6vw,25px);max-width:36ch;margin:0 auto}
+.lede b{color:#f5d27a;font-family:var(--display);letter-spacing:.06em}
+.crowct{font:600 17px/1.3 var(--body);color:#f5d27a;min-height:1.3em}
+.hint{font-size:16px;color:#cdb9e6}
+.crow{position:absolute;z-index:3;left:0;top:0;width:118px;height:84px;border:0;padding:0;background:none;cursor:pointer;will-change:transform;touch-action:manipulation}
+.crow svg{width:100%;height:100%;overflow:visible}
+.crow .say{font:700 15px var(--display);fill:#fbe9c4}
+.crow:focus-visible{outline:3px solid #f5d27a;border-radius:10px}
+.spark{position:absolute;z-index:4;font:900 34px var(--display);color:#f5d27a;text-shadow:0 0 18px rgba(255,210,120,.9);pointer-events:none;will-change:transform,opacity}
+
+/* buttons */
+.btn{--c:var(--red);display:inline-flex;align-items:center;gap:10px;font:700 20px/1 var(--display);letter-spacing:.06em;color:#fff7e6;background:var(--c);border:2px solid var(--gold-lit);border-radius:999px;padding:14px 22px;cursor:pointer;box-shadow:0 6px 0 #6d0a12,0 10px 30px var(--shadow);transition:transform .15s cubic-bezier(.3,1.6,.5,1)}
+.btn.ghost{--c:transparent;color:var(--ink);border-color:var(--rule);box-shadow:none;font-family:var(--body);font-weight:600;letter-spacing:0}
+.btn:active{transform:translateY(4px) scale(.98)}
+@media (hover:hover){.btn:hover{transform:translateY(-2px) scale(1.04)}}
+.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+
+/* cras -> hodie */
+textarea,input[type=text]{width:100%;font:20px/1.5 var(--body);color:var(--ink);background:var(--panel);border:2px solid var(--rule);border-radius:14px;padding:14px}
+textarea{min-height:150px;resize:vertical}
+.tasks{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:12px}
+.task{position:relative;display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;background:var(--panel);border:1px solid var(--rule);border-radius:14px;padding:12px 14px;box-shadow:0 8px 24px var(--shadow)}
+.task .old{font:700 14px var(--display);color:var(--muted);text-decoration:line-through;text-decoration-color:var(--red);text-decoration-thickness:2px}
+.task .txt{font-size:20px;overflow-wrap:anywhere}
+.task.done .txt{color:var(--muted)}
+.seal{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#e8454a,#8d0c16 70%);color:#ffe9b8;font:900 11px var(--display);letter-spacing:.06em;box-shadow:inset 0 0 0 3px rgba(255,220,160,.35),0 4px 10px rgba(80,0,0,.35);transform:rotate(-12deg)}
+.task input{width:30px;height:30px;accent-color:var(--red);cursor:pointer}
+.tally{font:700 22px var(--display);color:var(--red);margin-top:14px}
+
+/* altar */
+.altar-wrap{position:relative;display:grid;gap:18px}
+.altar{width:100%;max-width:520px;margin:0 auto;display:block;overflow:visible}
+.glow{transition:opacity .8s ease}
+.off{opacity:0;transform-box:fill-box;transform-origin:50% 100%;transform:scale(.3) translateY(20px);transition:transform .5s cubic-bezier(.3,1.6,.5,1),opacity .35s}
+.off.on{opacity:1;transform:none}
+.offers{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.offer{display:grid;gap:4px;text-align:left;font:600 18px/1.25 var(--body);color:var(--ink);background:var(--panel);border:2px solid var(--rule);border-radius:14px;padding:12px;cursor:pointer;transition:transform .15s cubic-bezier(.3,1.6,.5,1),border-color .2s}
+.offer[aria-pressed="true"]{border-color:var(--red);box-shadow:0 0 0 3px color-mix(in srgb,var(--red) 25%,transparent)}
+.offer .ico{font-size:28px;line-height:1}
+.offer small{font:400 15px/1.35 var(--body);color:var(--muted)}
+@media (hover:hover){.offer:hover{transform:translateY(-2px)}}
+.wed{display:inline-block;font:700 17px var(--display);color:#fff7e6;background:var(--leaf);border-radius:999px;padding:6px 14px;margin-bottom:10px}
+.smoke{transform-box:fill-box;transform-origin:50% 100%}
+.flame{transform-box:fill-box;transform-origin:50% 100%}
+
+/* days */
+.days{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:10px}
+.day{background:var(--panel);border:1px solid var(--rule);border-radius:16px;padding:16px;position:relative;overflow:hidden}
+.day .n{font:900 46px/1 var(--display);color:var(--red)}
+.day .n.today{background:linear-gradient(100deg,var(--red),var(--gold-lit),var(--red));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent}
+.day .l{font:700 17px var(--display);letter-spacing:.04em}
+.day .d{font-size:17px;color:var(--muted)}
+.novena{margin-top:14px;background:var(--panel);border:1px solid var(--rule);border-radius:16px;padding:16px}
+.beads{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
+.bead{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font:700 14px var(--display);border:2px solid var(--gold);color:var(--gold)}
+.bead.past{background:var(--gold);color:var(--panel)}
+.bead.now{background:var(--red);border-color:var(--red);color:#fff}
+
+/* contract + notice */
+.steps{counter-reset:s;display:grid;gap:12px;padding:0;margin:0 0 18px;list-style:none}
+.steps li{counter-increment:s;display:grid;grid-template-columns:52px 1fr;gap:12px;align-items:start}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--red);color:#ffe9b8;font:900 24px var(--display)}
+.clip{position:relative;margin:18px auto 0;max-width:420px;background:#f1e6cc;color:#1f1812;padding:18px 20px 16px;font:17px/1.45 Georgia,"Times New Roman",serif;box-shadow:0 14px 34px rgba(0,0,0,.25);transform:rotate(-1.3deg);clip-path:polygon(0 2%,4% 0,12% 1.5%,22% 0,35% 1%,48% 0,60% 1.8%,74% .4%,88% 1.6%,100% 0,99% 20%,100% 45%,98.8% 70%,100% 98%,90% 100%,76% 98.6%,62% 100%,48% 98.8%,33% 100%,20% 98.5%,8% 100%,0 98%,1% 70%,0 44%,1.2% 20%)}
+.clip .mast{font:700 12px/1 Georgia,serif;letter-spacing:.2em;text-transform:uppercase;border-bottom:1px solid #1f1812;padding-bottom:6px;margin-bottom:10px;display:flex;justify-content:space-between}
+.clip .big{font:900 22px/1.1 Georgia,serif;letter-spacing:.03em}
+.clip .thn{font-family:"Noto Serif Thai",Tahoma,serif}
+#rain{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.milheiro>*:not(canvas){position:relative;z-index:1}
+.milheiro{position:relative;margin-top:22px;border-radius:18px;padding:18px;background:linear-gradient(160deg,#1f5d3a,#0f3a24);color:#eef8e8;overflow:hidden;min-height:220px;padding-bottom:120px}
+.milheiro .count{font:900 58px/1 var(--display);color:#ffe27a}
+
+/* picture history */
+.time{display:grid;gap:20px}
+.moment{display:grid;grid-template-columns:minmax(120px,38%) 1fr;gap:16px;align-items:start}
+.moment img{border-radius:10px;box-shadow:0 10px 30px var(--shadow);border:3px solid var(--panel)}
+.yr{font:900 30px/1 var(--display);color:var(--red)}
+.verse{border-left:4px solid var(--gold);padding:6px 0 6px 14px;margin:10px 0;font-style:italic}
+@media (max-width:540px){.moment{grid-template-columns:1fr}.moment img{max-height:420px;width:auto;margin:0 auto}}
+
+/* worlds */
+.worlds{display:grid;gap:18px}
+.world{background:var(--panel);border:1px solid var(--rule);border-radius:18px;overflow:hidden;box-shadow:0 10px 30px var(--shadow)}
+.world .ph{display:grid;grid-auto-flow:column;grid-auto-columns:78%;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px;background:#1a0b10}
+.world .ph img{scroll-snap-align:center;height:260px;width:100%;object-fit:cover;border-radius:10px}
+.world .ph.one{grid-auto-columns:100%}
+.world .ph.one img{height:340px;object-fit:contain;background:#1a0b10}
+.world .bd{padding:16px 18px 6px}
+.world .big{font:900 40px/1 var(--display);color:var(--red)}
+
+/* crate */
+.crate-box{display:grid;justify-items:center;gap:10px}
+.crate{width:min(100%,340px);cursor:pointer;background:none;border:0;padding:0}
+.crate svg{width:100%;overflow:visible}
+.lid{transform-box:fill-box;transform-origin:0% 100%;transition:transform .7s cubic-bezier(.3,1.5,.5,1)}
+.crate[aria-expanded="true"] .lid{transform:rotate(-22deg) translate(-4px,-4px)}
+.crate .saint{opacity:0;transform:translateY(40px);transition:transform .9s .25s cubic-bezier(.3,1.4,.5,1),opacity .5s .25s}
+.crate[aria-expanded="true"] .saint{opacity:1;transform:none}
+.crate .rays{opacity:0;transition:opacity .6s .2s}
+.crate[aria-expanded="true"] .rays{opacity:1}
+.crate-text{max-width:640px}
+
+/* who */
+details{background:var(--panel);border:1px solid var(--rule);border-radius:14px;padding:12px 16px;margin-top:12px}
+summary{cursor:pointer;font:700 19px var(--display)}
+.src{font-size:16px;color:var(--muted)}
+.src li{margin-bottom:6px}
+footer{padding:40px 16px 60px;text-align:center;font-size:16px;color:var(--muted)}
+
+@media (prefers-reduced-motion:no-preference){
+  h1{animation:foil 7s linear infinite}
+  @keyframes foil{to{background-position:-200% 0}}
+  .card3d .shine{animation:sheen 6s ease-in-out infinite}
+  @keyframes sheen{0%,100%{opacity:0;transform:translateX(-40%)}50%{opacity:.8;transform:translateX(40%)}}
+  .smoke{animation:rise 3.2s ease-out infinite}
+  .smoke.s2{animation-delay:1.1s}.smoke.s3{animation-delay:2.1s}
+  @keyframes rise{0%{opacity:0;transform:translateY(0) scale(.6)}25%{opacity:.7}100%{opacity:0;transform:translateY(-70px) scale(1.6) rotate(8deg)}}
+  .flame{animation:flick .18s ease-in-out infinite alternate}
+  @keyframes flick{from{transform:scale(1,1)}to{transform:scale(.9,1.12) rotate(2deg)}}
+  .day .n.today{animation:foil 4s linear infinite}
+  .task.new{animation:stamp .6s cubic-bezier(.3,1.6,.5,1) both}
+  .task.new .seal{animation:seal .7s .25s cubic-bezier(.3,1.8,.5,1) both}
+  @keyframes stamp{from{opacity:0;transform:translateY(16px) scale(.96)}}
+  @keyframes seal{from{opacity:0;transform:rotate(-12deg) scale(2.4)}}
+}
+</style>
+</head>
+<body>
+
+<div class="bar" role="group" aria-label="Language · ภาษา">
+  <button class="pill" data-set="en" aria-pressed="true">EN</button>
+  <button class="pill" data-set="th" aria-pressed="false">ไทย</button>
+  <button class="pill" data-set="both" aria-pressed="false">EN+ไทย</button>
+</div>
+
+<header class="hero" id="top">
+  <canvas id="sky" aria-hidden="true"></canvas>
+  <div class="hero-in">
+    <div class="card3d" id="card"><div class="face"><div class="halo"></div><img src="img/milan-1897.jpg" alt="Holy card, Milan 1897: Saint Expedite in Roman armour holds a cross marked HODIE; under his sandal a crow's ribbon reads CRAS." width="462" height="726"><div class="shine"></div></div></div>
+    <h1>Hodie<span class="th">วันนี้</span></h1>
+    <p class="lede en">Saint Expedite, patron of urgent causes. His cross says <b>HODIE</b>, today. The crow under his foot says <b>CRAS</b>, tomorrow.</p>
+    <p class="lede th">นักบุญเอ็กซ์เปดิต องค์อุปถัมภ์เรื่องด่วน ไม้กางเขนในมือท่านเขียนว่า <b>HODIE</b> แปลว่า วันนี้ อีกาใต้เท้าท่านร้องว่า <b>CRAS</b> แปลว่า พรุ่งนี้</p>
+    <p class="hint en">Crows are passing, croaking <i>cras, cras</i>. Tap one.</p>
+    <p class="hint th">อีกาบินผ่าน ร้องว่า <i>คราส คราส</i> แตะมันสักตัว</p>
+    <p class="crowct" id="crowct" aria-live="polite"></p>
+  </div>
+</header>
+
+<main>
+<section class="wrap" id="today">
+  <h2><span class="en">Cras → Hodie</span> <span class="th">พรุ่งนี้ → วันนี้</span></h2>
+  <p class="en">Write what has been waiting for tomorrow, one thing per line. Press the cross.</p>
+  <p class="th">เขียนสิ่งที่รอ "พรุ่งนี้" มานาน บรรทัดละเรื่อง แล้วกดไม้กางเขน</p>
+  <label for="list" class="small"><span class="en">Tomorrow's list</span><span class="th"> รายการพรุ่งนี้</span></label>
+  <textarea id="list" placeholder="call the landlord&#10;send the invoice&#10;โทรหาหมอ"></textarea>
+  <div class="row" style="margin-top:12px">
+    <button class="btn" id="hodie">✝ <span class="en">HODIE</span><span class="th">วันนี้</span></button>
+    <button class="btn ghost" id="clear"><span class="en">Clear list</span><span class="th">ล้างรายการ</span></button>
+  </div>
+  <ul class="tasks" id="tasks" aria-live="polite"></ul>
+  <p class="tally" id="tally"></p>
+  <p class="small en">Each one you finish lays a red flower at the red house below.</p>
+  <p class="small th">ทำเสร็จหนึ่งเรื่อง ดอกไม้แดงหนึ่งดอกจะไปวางที่ศาลแดงข้างล่าง</p>
+</section>
+
+<div class="rule"></div>
+
+<section class="wrap" id="house">
+  <h2><span class="en">The red house</span> <span class="th">ศาลสีแดง</span></h2>
+  <p class="en">On Réunion, in the Indian Ocean, people build him small red houses at crossroads and sharp bends: 338 oratories and 31 chapels in the 1998 count. Set one. Tap an offering.</p>
+  <p class="th">ที่เกาะเรอูนียง กลางมหาสมุทรอินเดีย ผู้คนสร้างศาลหลังเล็กสีแดงให้ท่านตามทางแยกและโค้งอันตราย การสำรวจปี 1998 นับได้ 338 ศาล กับโบสถ์น้อยอีก 31 หลัง ลองจัดศาลของคุณ แตะของถวายได้เลย</p>
+  <div id="wed"></div>
+  <div class="altar-wrap">
+    <svg class="altar" id="altar" viewBox="0 0 400 470" role="img" aria-labelledby="altarT">
+      <title id="altarT">A red spirit house on a pillar, the Saint Expedite holy card in its doorway, with the offerings you choose on its porch.</title>
+      <defs>
+        <radialGradient id="g1"><stop offset="0" stop-color="#ffd27a" stop-opacity=".9"/><stop offset="1" stop-color="#ff5a3a" stop-opacity="0"/></radialGradient>
+        <linearGradient id="red" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#e3242b"/><stop offset="1" stop-color="#9c0d17"/></linearGradient>
+        <linearGradient id="gold" x1="0" x2="1"><stop offset="0" stop-color="#b8841c"/><stop offset=".5" stop-color="#ffe39a"/><stop offset="1" stop-color="#b8841c"/></linearGradient>
+        <linearGradient id="fanta" x1="0" x2="1"><stop offset="0" stop-color="#b3001b"/><stop offset=".45" stop-color="#ff3b3b"/><stop offset="1" stop-color="#a1001a"/></linearGradient>
+        <clipPath id="door"><path d="M178 238v-54a22 22 0 0 1 44 0v54z"/></clipPath>
+      </defs>
+      <circle class="glow" id="glow" cx="200" cy="190" r="190" fill="url(#g1)" opacity=".15"/>
+      <!-- pillar -->
+      <rect x="186" y="262" width="28" height="170" fill="url(#red)"/>
+      <rect x="160" y="428" width="80" height="16" rx="3" fill="#7d0a13"/>
+      <rect x="182" y="300" width="36" height="6" fill="url(#gold)"/><rect x="182" y="380" width="36" height="6" fill="url(#gold)"/>
+      <!-- porch -->
+      <path d="M78 246h244l-12 18H90z" fill="#8d0b15"/>
+      <rect x="78" y="240" width="244" height="8" fill="url(#gold)"/>
+      <!-- body -->
+      <rect x="128" y="150" width="144" height="90" fill="url(#red)"/>
+      <rect x="128" y="150" width="144" height="6" fill="url(#gold)"/>
+      <rect x="136" y="170" width="26" height="46" rx="3" fill="#7d0a13" stroke="url(#gold)" stroke-width="2"/>
+      <rect x="238" y="170" width="26" height="46" rx="3" fill="#7d0a13" stroke="url(#gold)" stroke-width="2"/>
+      <image href="img/milan-1897.jpg" x="170" y="160" width="60" height="94" clip-path="url(#door)" preserveAspectRatio="xMidYMin slice"/>
+      <path d="M178 238v-54a22 22 0 0 1 44 0v54" fill="none" stroke="url(#gold)" stroke-width="3"/>
+      <!-- roof tiers -->
+      <path d="M104 154 200 86l96 68z" fill="#a10f19" stroke="url(#gold)" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M136 112 200 52l64 60z" fill="#c4161f" stroke="url(#gold)" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M166 70 200 30l34 40z" fill="#e3242b" stroke="url(#gold)" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M200 30V4" stroke="url(#gold)" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="200" cy="8" r="4" fill="#ffe39a"/>
+      <path d="M104 154q-12-4-10-20" fill="none" stroke="url(#gold)" stroke-width="4" stroke-linecap="round"/>
+      <path d="M296 154q12-4 10-20" fill="none" stroke="url(#gold)" stroke-width="4" stroke-linecap="round"/>
+      <path d="M136 112q-10-4-8-18" fill="none" stroke="url(#gold)" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M264 112q10-4 8-18" fill="none" stroke="url(#gold)" stroke-width="3.5" stroke-linecap="round"/>
+      <text x="200" y="146" text-anchor="middle" font-family="Cinzel,serif" font-weight="700" font-size="11" fill="#ffe39a" letter-spacing="2">HODIE</text>
+
+      <!-- offerings on the porch; each sits on y=240 -->
+      <g class="off" data-o="fanta">
+        <path d="M96 240v-30q0-6 4-10v-8h8v8q4 4 4 10v30z" fill="url(#fanta)"/>
+        <rect x="97" y="214" width="14" height="10" fill="#1d6fd1"/><circle cx="104" cy="219" r="3.2" fill="#ff8a1c"/>
+        <path d="M106 192 118 164" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M106 192 118 164" stroke="#e83a8f" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 4"/>
+        <path d="M116 240v-24q0-5 3-8v-6h6v6q3 3 3 8v24z" fill="url(#fanta)" opacity=".9"/>
+      </g>
+      <g class="off" data-o="flowers">
+        <path d="M140 240h18l-3-20h-12z" fill="#e3242b" stroke="#ffe39a" stroke-width="1.5"/>
+        <path d="M149 222c0-14-8-22-12-30M149 222c0-16 6-24 10-34M149 222c2-10 10-14 16-18" stroke="#2f7a45" stroke-width="2" fill="none"/>
+        <g fill="#d8102a"><circle cx="136" cy="190" r="7"/><circle cx="160" cy="186" r="7"/><circle cx="166" cy="203" r="6"/><circle cx="148" cy="180" r="6"/></g>
+        <g fill="#ff6a7a"><circle cx="136" cy="190" r="2.5"/><circle cx="160" cy="186" r="2.5"/><circle cx="166" cy="203" r="2"/><circle cx="148" cy="180" r="2"/></g>
+      </g>
+      <g class="off" data-o="incense">
+        <path d="M244 240h26l-3-12h-20z" fill="#b8841c"/><rect x="243" y="226" width="28" height="4" rx="2" fill="#ffe39a"/>
+        <path d="M252 226l-4-34M257 226v-36M262 226l4-34" stroke="#8d0b15" stroke-width="2"/>
+        <g fill="#ffb347"><circle cx="248" cy="192" r="1.8"/><circle cx="257" cy="190" r="1.8"/><circle cx="266" cy="192" r="1.8"/></g>
+        <g fill="none" stroke="#e8dff5" stroke-width="2.4" stroke-linecap="round">
+          <path class="smoke" d="M248 188q-6-10 0-18t0-18" opacity=".6"/>
+          <path class="smoke s2" d="M257 186q6-10 0-18t0-18" opacity=".6"/>
+          <path class="smoke s3" d="M266 188q-6-10 0-18t0-18" opacity=".6"/>
+        </g>
+      </g>
+      <g class="off" data-o="khanom">
+        <rect x="280" y="236" width="36" height="4" rx="2" fill="#ffe39a"/>
+        <rect x="284" y="228" width="12" height="8" rx="2" fill="#2fae5a"/><rect x="284" y="224" width="12" height="4" rx="2" fill="#fff4dc"/>
+        <rect x="299" y="228" width="12" height="8" rx="2" fill="#e84a8a"/><rect x="299" y="224" width="12" height="4" rx="2" fill="#fff4dc"/>
+        <circle cx="297" cy="218" r="5" fill="#ffb21f"/><circle cx="306" cy="219" r="4" fill="#ffb21f"/>
+      </g>
+      <g class="off" data-o="cake">
+        <path d="M280 222h36v-14q-18-10-36 0z" fill="#e7b760"/><path d="M280 208q18-10 36 0" fill="none" stroke="#9b5a1c" stroke-width="3"/>
+        <path d="M284 214h28" stroke="#f6d78d" stroke-width="2"/>
+      </g>
+      <g class="off" data-o="candle">
+        <rect x="62" y="206" width="18" height="34" rx="3" fill="#c4161f"/><rect x="60" y="236" width="22" height="4" rx="2" fill="#ffe39a"/>
+        <path d="M71 206v-5" stroke="#333" stroke-width="1.5"/>
+        <path class="flame" d="M71 201c-6-6-3-14 0-18 3 4 6 12 0 18z" fill="#ffc23a"/><path class="flame" d="M71 199c-3-3-1-7 0-9 1 2 3 6 0 9z" fill="#fff4c2"/>
+      </g>
+      <g class="off" data-o="water">
+        <path d="M322 240l-3-28h18l-3 28z" fill="#cfe9ff" fill-opacity=".45" stroke="#e8f4ff" stroke-width="1.5"/>
+        <path d="M320.5 220h15.2l-1.8 20h-11.6z" fill="#7cc4ff" fill-opacity=".55"/>
+      </g>
+      <g class="off" data-o="coins">
+        <ellipse cx="190" cy="238" rx="8" ry="3" fill="#b8841c"/><ellipse cx="190" cy="235" rx="8" ry="3" fill="#ffe39a" stroke="#b8841c"/>
+        <ellipse cx="210" cy="238" rx="8" ry="3" fill="#9aa3ad"/><ellipse cx="210" cy="235" rx="8" ry="3" fill="#e3e8ee" stroke="#9aa3ad"/>
+        <ellipse cx="200" cy="232" rx="8" ry="3" fill="#ffe39a" stroke="#b8841c"/>
+      </g>
+      <g id="doneflowers"></g>
+    </svg>
+    <div class="offers" id="offers"></div>
+    <div class="row"><button class="btn ghost" id="unset"><span class="en">Clear the porch</span><span class="th">เก็บของถวาย</span></button></div>
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<section class="wrap" id="days">
+  <h2><span class="en">His days</span> <span class="th">วันของท่าน</span></h2>
+  <p class="en">Counted from your own clock.</p>
+  <p class="th">นับจากนาฬิกาของคุณเอง</p>
+  <div class="days" id="daytiles"></div>
+  <div class="novena">
+    <h3><span class="en">Novena</span> <span class="th">โนวีนา</span></h3>
+    <p class="en"><span class="tag">Practitioner</span>Nine days, one prayer a day, often timed to end on a 19th. Naples kept a quick "flying novena" for students before exams.</p>
+    <p class="th"><span class="tag">ผู้ปฏิบัติ</span>สวดเก้าวัน วันละครั้ง นิยมให้จบวันที่ 19 ที่เนเปิลส์มี "โนวีนาบิน" ฉบับเร่งด่วน ไว้ให้นักเรียนสวดก่อนสอบ</p>
+    <p id="novtext"></p>
+    <div class="beads" id="beads" aria-hidden="true"></div>
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<section class="wrap" id="thanks">
+  <h2><span class="en">Ask · Promise · Thank</span> <span class="th">ขอ · สัญญา · ขอบคุณ</span></h2>
+  <p class="en"><span class="tag">Practitioner</span>Devotion to Expedite runs as a bargain in three beats.</p>
+  <p class="th"><span class="tag">ผู้ปฏิบัติ</span>การบูชาท่านเป็นข้อตกลงสามจังหวะ</p>
+  <ol class="steps">
+    <li><div><p class="en"><b>Ask</b> for one fast, specific thing, plainly.</p><p class="th"><b>ขอ</b> เรื่องเดียว ชัด ๆ และเร็ว</p></div></li>
+    <li><div><p class="en"><b>Promise</b> what you will give, and when.</p><p class="th"><b>สัญญา</b> ว่าจะถวายอะไร และเมื่อไร</p></div></li>
+    <li><div><p class="en"><b>Thank</b> him in public once it comes, and pay what you promised. On Réunion the saying goes: one must pay him, and quickly.</p><p class="th"><b>ขอบคุณ</b> ท่านต่อหน้าผู้คนเมื่อได้ตามขอ แล้วถวายตามสัญญา ที่เรอูนียงเขาว่า ต้องแก้บนท่าน และต้องแก้ให้ไว</p></div></li>
+  </ol>
+  <p class="en">New Orleans devotees printed their thanks as small notices in the newspaper; today they post them online. Make one.</p>
+  <p class="th">ชาวนิวออร์ลีนส์เคยลงคำขอบคุณเป็นประกาศเล็ก ๆ ในหนังสือพิมพ์ ทุกวันนี้โพสต์ออนไลน์ ลองทำของคุณ</p>
+  <div class="row">
+    <div style="flex:1 1 180px"><label for="ini" class="small"><span class="en">Your initials</span><span class="th"> อักษรย่อชื่อ</span></label><input type="text" id="ini" maxlength="12" placeholder="N. P."></div>
+    <div style="flex:2 1 240px"><label for="for" class="small"><span class="en">For (optional)</span><span class="th"> เรื่องที่ได้ (ไม่ใส่ก็ได้)</span></label><input type="text" id="for" maxlength="60" placeholder="a quick answer"></div>
+  </div>
+  <div class="clip" id="clip" aria-live="polite"></div>
+  <div class="row" style="justify-content:center;margin-top:16px">
+    <button class="btn" id="copy"><span class="en">Copy</span><span class="th">คัดลอก</span></button>
+    <button class="btn ghost" id="save"><span class="en">Save picture</span><span class="th">บันทึกภาพ</span></button>
+  </div>
+  <div class="milheiro" id="mil">
+    <canvas id="rain" aria-hidden="true"></canvas>
+    <p class="en" style="position:relative"><span class="tag" style="color:#ffe27a">Practitioner</span>In Brazil the promise is often a thousand prayer cards, printed and handed out: the <i>promessa do milheiro</i>. Print shops stock it at about R$20 a thousand.</p>
+    <p class="th" style="position:relative"><span class="tag" style="color:#ffe27a">ผู้ปฏิบัติ</span>ที่บราซิล คำสัญญามักเป็นการพิมพ์การ์ดสวดมนต์ใบเล็กพันใบแล้วแจกไป เรียกว่า <i>promessa do milheiro</i> ร้านพิมพ์มีขายพันใบราว 20 เรอัล</p>
+    <div class="row" style="position:relative"><button class="btn" id="scatter" style="--c:#b3121f"><span class="en">Scatter a thousand</span><span class="th">โปรยพันใบ</span></button><span class="count" id="milct">0</span></div>
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<section class="wrap" id="picture">
+  <h2><span class="en">The picture grew</span> <span class="th">ภาพที่ค่อย ๆ เติบโต</span></h2>
+  <p class="en">The crow and the two words came late. Four moments:</p>
+  <p class="th">อีกากับคำสองคำนั้นมาทีหลัง ดูสี่ช่วงเวลา</p>
+  <div class="time">
+    <div class="moment"><img src="img/brno-1773.jpg" alt="White and gold statue of Saint Expedite in Roman armour, on a baroque altar in Brno." loading="lazy" width="800" height="1067"><div>
+      <div class="yr">c. 1773</div>
+      <p class="en"><b>Brno.</b> Jakub Scherz carves him for the altar of Saint Barbara in Saint Michael's church: a young soldier. No crow yet.</p>
+      <p class="th"><b>เมืองบรโน (เช็ก)</b> ยาคุบ เชิร์ซ แกะรูปท่านไว้ที่แท่นบูชานักบุญบาร์บารา ในโบสถ์นักบุญมีคาแอล เป็นทหารหนุ่ม ยังไม่มีอีกา</p>
+    </div></div>
+    <div class="moment"><img src="img/acireale-1781.jpg" alt="Oil painting: Saint Expedite kneels on clouds holding a palm; a black crow at lower left carries a ribbon reading CRAS." loading="lazy" width="630" height="809"><div>
+      <div class="yr">1781</div>
+      <p class="en"><b>Acireale, Sicily.</b> On 18 April 1781 the city makes him its second patron, patron of its merchants and sailors. In this painting a crow already croaks CRAS at his knee.</p>
+      <p class="th"><b>อาชีเรอาเล เกาะซิซิลี</b> วันที่ 18 เมษายน 1781 เมืองยกท่านเป็นองค์อุปถัมภ์องค์ที่สอง ดูแลพ่อค้าและชาวเรือ ในภาพนี้มีอีการ้อง CRAS อยู่ข้างเข่าท่านแล้ว</p>
+    </div></div>
+    <div class="moment"><img src="img/munich-1790.jpg" alt="Engraving: Saint Expedite enthroned on clouds above bales and barrels of trade goods, with a Latin line from the Letter of James." loading="lazy" width="630" height="931"><div>
+      <div class="yr">&lt; 1790</div>
+      <p class="en"><b>Munich.</b> Jungwierth engraves him after Palko, seated over bales and barrels of trade. Under him, a line from the Letter of James, 4:13:</p>
+      <p class="th"><b>มิวนิก</b> ยุงเวียร์ทแกะภาพพิมพ์ตามแบบของพัลโค ท่านนั่งเหนือห่อสินค้าและถังไม้ ใต้ภาพเป็นข้อความจากจดหมายของยากอบ บทที่ 4 ข้อ 13</p>
+      <p class="verse">Mercabimur et lucrum faciemus<br><span class="en">"We will trade, and make gain."</span><span class="th">"เราจะค้าขาย และได้กำไร"</span></p>
+      <p class="en">The same verse, in the Latin Bible, opens <i>Hodie, aut crastino</i>: today, or tomorrow.</p>
+      <p class="th">ข้อเดียวกันนี้ในพระคัมภีร์ภาษาละติน ขึ้นต้นว่า <i>Hodie, aut crastino</i> คือ วันนี้ หรือพรุ่งนี้</p>
+    </div></div>
+    <div class="moment"><img src="img/milan-1897.jpg" alt="The 1897 Milan holy card: HODIE on the cross, CRAS from the crow, a palm, a helmet at his feet." loading="lazy" width="462" height="726"><div>
+      <div class="yr">1897</div>
+      <p class="en"><b>Milan.</b> A cheap colour print fixes the picture people know: HODIE on the cross, CRAS from the crow, the palm of a martyr, the helmet set down. Cards like it carried him round the world.</p>
+      <p class="th"><b>มิลาน</b> ภาพพิมพ์สีราคาถูกทำให้ภาพท่านเป็นแบบที่คนรู้จักทุกวันนี้ HODIE บนไม้กางเขน CRAS จากปากอีกา ใบปาล์มของผู้พลีชีพ หมวกเหล็กวางไว้ที่พื้น การ์ดแบบนี้พาท่านไปทั่วโลก</p>
+    </div></div>
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<section class="wrap" id="worlds">
+  <h2><span class="en">His worlds</span> <span class="th">โลกของท่าน</span></h2>
+  <div class="worlds">
+    <article class="world">
+      <div class="ph">
+        <img src="img/reunion-ravine.jpg" alt="Red chapel of Saint Expedite beside a road sign reading Ravine Saint Expedit, Réunion." loading="lazy">
+        <img src="img/reunion-chapel.jpg" alt="Inside a red Réunion chapel: rows of Saint Expedite statues among red flowers." loading="lazy">
+        <img src="img/reunion-oratory.jpg" alt="A small red oratory with a grille door among tree ferns, Réunion." loading="lazy">
+        <img src="img/reunion-porteurs.jpg" alt="Statue of Saint Expedite in red, holding his cross, among red flowers, Réunion." loading="lazy">
+        <img src="img/reunion-altar.jpg" alt="Red altar crowded with Saint Expedite statues, flowers and candles, Réunion." loading="lazy">
+      </div>
+      <div class="bd">
+        <h3><span class="en">Réunion</span> <span class="th">เรอูนียง</span></h3>
+        <p class="en"><span class="tag">Documented</span>Fanny Fleurié, stranded in Marseille by the 1918 flu, vowed him a statue if she got home. A bishop blessed the first one in Saint-Denis on 3 May 1931. The red comes from Tamil practice and the goddess Kali; he stands beside Hindu gods without merging into them. Islanders call him <i>un malbar-catholique</i>, a Tamil Catholic.</p>
+        <p class="th"><span class="tag">มีบันทึก</span>ฟานี เฟลอรีเย ติดอยู่ที่มาร์กเซยช่วงไข้หวัดใหญ่ปี 1918 บนไว้ว่าถ้าได้กลับบ้านจะถวายรูปปั้น บิชอปเสกรูปแรกที่แซ็งเดอนี เมื่อ 3 พฤษภาคม 1931 สีแดงมาจากประเพณีทมิฬและเทวีกาลี ท่านยืนเคียงเทพฮินดูโดยไม่รวมเป็นองค์เดียวกัน ชาวเกาะเรียกท่านว่า "มะละบาร์-คาทอลิก" คือคาทอลิกเชื้อสายทมิฬ</p>
+      </div>
+    </article>
+    <article class="world">
+      <div class="ph one"><img src="img/new-orleans.jpg" alt="Statue of Saint Expedite on a wall bracket beside the entrance of Our Lady of Guadalupe Chapel, New Orleans." loading="lazy"></div>
+      <div class="bd">
+        <h3><span class="en">New Orleans</span> <span class="th">นิวออร์ลีนส์</span></h3>
+        <p class="en"><span class="tag">Documented</span>His statue stands by the door of Our Lady of Guadalupe Chapel on Rampart Street, built in 1827. <span class="tag">Practitioner</span>So devotees keep him by the door at home, and pay him in pound cake. The oldest record, from 1935–39, names red flowers.</p>
+        <p class="th"><span class="tag">มีบันทึก</span>รูปปั้นท่านยืนข้างประตูโบสถ์น้อยแม่พระกวาดาลูเป ถนนแรมพาร์ต สร้างปี 1827 <span class="tag">ผู้ปฏิบัติ</span>ผู้ศรัทธาจึงตั้งท่านไว้ข้างประตูบ้าน และแก้บนด้วยเค้กปอนด์ บันทึกเก่าสุด ปี 1935–39 ระบุว่าเป็นดอกไม้แดง</p>
+      </div>
+    </article>
+    <article class="world">
+      <div class="bd">
+        <div class="big">70,000</div>
+        <h3><span class="en">Buenos Aires · São Paulo</span> <span class="th">บัวโนสไอเรส · เซาเปาโล</span></h3>
+        <p class="en"><span class="tag">Documented</span>About 70,000 people come to his sanctuary at Balvanera, Buenos Aires, every 19 April, queueing up to twenty blocks to touch the image. In Brazil a whole town, Santo Expedito in São Paulo state, carries his name.</p>
+        <p class="th"><span class="tag">มีบันทึก</span>ทุกวันที่ 19 เมษายน ผู้คนราว 70,000 คนมาที่ศาลของท่านย่านบัลบาเนรา กรุงบัวโนสไอเรส ต่อแถวยาวถึงยี่สิบช่วงตึกเพื่อได้แตะรูปท่าน ที่บราซิลมีทั้งเมืองชื่อซานโต เอ็กซ์เปดิโต ในรัฐเซาเปาโล</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<section class="wrap" id="crate">
+  <h2><span class="en">The crate</span> <span class="th">ลังไม้</span></h2>
+  <div class="crate-box">
+    <button class="crate" id="cratebtn" aria-expanded="false" aria-controls="cratetext">
+      <svg viewBox="0 -10 320 260" role="img" aria-label="A wooden shipping crate stamped SPEDITO. Tap to open it.">
+        <g class="rays" stroke="#f5d27a" stroke-width="4" stroke-linecap="round" opacity="0">
+          <path d="M160 70V20M110 78 86 40M210 78l24-38M70 96 40 76M250 96l30-20"/>
+        </g>
+        <image class="saint" href="img/milan-1897.jpg" x="128" y="8" width="64" height="100" preserveAspectRatio="xMidYMin slice"/>
+        <rect x="40" y="96" width="240" height="140" rx="6" fill="#b8844a" stroke="#6b4420" stroke-width="4"/>
+        <path d="M40 142h240M40 190h240" stroke="#6b4420" stroke-width="3"/>
+        <path d="M48 104 272 228M272 104 48 228" stroke="#8f6232" stroke-width="6" opacity=".45"/>
+        <g transform="rotate(-6 160 166)"><rect x="92" y="146" width="136" height="40" rx="4" fill="none" stroke="#b3121f" stroke-width="4"/>
+        <text x="160" y="176" text-anchor="middle" font-family="Cinzel,serif" font-weight="900" font-size="26" fill="#b3121f" letter-spacing="3">SPEDITO</text></g>
+        <g class="lid"><rect x="34" y="80" width="252" height="20" rx="4" fill="#c99558" stroke="#6b4420" stroke-width="4"/></g>
+      </svg>
+    </button>
+    <p class="small en">Tap the crate.</p><p class="small th">แตะลังไม้</p>
+    <div class="crate-text" id="cratetext" hidden>
+      <p class="en"><span class="tag">Legend</span>A crate reaches a convent stamped <i>spedito</i>, Italian for "shipped". Inside is a saint with no label, and the nuns take the stamp for his name. The story is told of Paris in 1781, New Orleans around 1921, São Paulo and Haiti.</p>
+      <p class="th"><span class="tag">ตำนาน</span>ลังไม้ส่งถึงสำนักนางชี ข้างลังประทับว่า <i>spedito</i> ภาษาอิตาลีแปลว่า "ส่งแล้ว" ข้างในเป็นรูปนักบุญที่ไม่มีป้ายชื่อ แม่ชีเลยเรียกท่านตามตราประทับ เรื่องนี้เล่ากันทั้งที่ปารีส ปี 1781 นิวออร์ลีนส์ ราวปี 1921 เซาเปาโล และเฮติ</p>
+      <p class="en"><span class="tag">Scholarship</span>Churches in Messina and Acireale honoured him in the late 1600s, a century before the crate. The cult made the pun; the pun made the story.</p>
+      <p class="th"><span class="tag">นักวิชาการ</span>โบสถ์ที่เมสซีนาและอาชีเรอาเลบูชาท่านตั้งแต่ปลายทศวรรษ 1600 ก่อนเรื่องลังไม้ร้อยปี ความศรัทธาเกิดก่อน แล้วจึงเกิดคำเล่นคำ แล้วคำเล่นคำจึงกลายเป็นตำนาน</p>
+      <p class="en">And in 1781, the year the Paris crate is said to arrive, Acireale made him its patron.</p>
+      <p class="th">และในปี 1781 ปีที่ว่ากันว่าลังไม้มาถึงปารีส อาชีเรอาเลก็ยกท่านเป็นองค์อุปถัมภ์ของเมือง</p>
+    </div>
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<section class="wrap" id="who">
+  <h2><span class="en">Who he was</span> <span class="th">ท่านคือใคร</span></h2>
+  <p class="en"><span class="tag">Tradition</span>A Roman soldier, martyred at Melitene, now Malatya in Turkey, around 303. His feast is 19 April.</p>
+  <p class="th"><span class="tag">ตามประเพณี</span>ทหารโรมัน พลีชีพที่เมลิทีนี (ปัจจุบันคือมาลาตยา ประเทศตุรกี) ราวปี 303 วันฉลองของท่านคือ 19 เมษายน</p>
+  <p class="en"><span class="tag">Scholarship</span>His name stands twice in the old martyr list, at Rome and at Melitene. It may be a misreading of Elpidius; in Latin <i>expeditus</i> also means a soldier travelling light. Around 1905 Rome moved against unapproved pictures of him, and the devotion kept growing. The phrase used today: tolerated, not admitted.</p>
+  <p class="th"><span class="tag">นักวิชาการ</span>ชื่อท่านปรากฏสองครั้งในบัญชีรายชื่อมรณสักขีโบราณ ที่โรมและที่เมลิทีนี อาจเป็นการอ่านชื่อ "เอลปิดิอุส" ผิด และคำละติน <i>expeditus</i> ยังแปลว่าทหารที่เดินทัพตัวเบา ราวปี 1905 โรมเคยสั่งห้ามภาพของท่านที่ไม่ได้รับอนุญาต แต่ความศรัทธากลับเติบโตต่อ ทุกวันนี้ใช้คำว่า "ยอมให้มี แต่ไม่รับรอง"</p>
+  <p class="en">Patron of urgent causes, of speed, of merchants and sailors, of students at exams.</p>
+  <p class="th">องค์อุปถัมภ์เรื่องด่วน ความรวดเร็ว พ่อค้า ชาวเรือ และนักเรียนที่กำลังจะสอบ</p>
+  <details>
+    <summary><span class="en">Sources</span><span class="th">แหล่งที่มา</span></summary>
+    <ul class="src">
+      <li>Michael Kuefler, "The Convertible Saint," <i>Journal of Religious History</i> 42.1 (2018)</li>
+      <li>Hippolyte Delehaye; Herbert Thurston, "Flotsam and Jetsam," <i>The Month</i> 108 (Dec 1905)</li>
+      <li><i>The Book of Saints</i> (1921)</li>
+      <li>Prosper Ève; Philippe Reignier, thesis, Université de La Réunion (2001) · <a href="https://books.openedition.org/pur/4689?lang=fr">Presses universitaires de Rennes</a> · <a href="https://7lameslamer.net/au-nom-de-saint-expedit/">7 Lames la Mer</a> · <a href="https://www.les-oratoires.asso.fr/sesc.html">Les oratoires de Saint-Expédit</a></li>
+      <li><a href="https://www.louisianafolklife.org/lt/articles_essays/lfmexpedito.html">St. Expedito in South Louisiana</a>, Louisiana Folklife Program · Harry Middleton Hyatt, fieldwork 1935–39</li>
+      <li><a href="https://readersandrootworkers.org/wiki/Saint_Expedite">Saint Expedite</a>, AIRR · <a href="https://www.luckymojo.com/products-saint-expedite.html">Lucky Mojo Curio Co.</a></li>
+      <li><i>La Nación</i>, Balvanera feast coverage · <a href="https://en.wikipedia.org/wiki/Expeditus">Expeditus</a>, Wikipedia</li>
+      <li>From the <a href="https://github.com/NaNoBotCo/st-expedite-wiki">St. Expedite wiki</a>. His shrines on a globe, and his name in five languages' books: <a href="https://wichaa.net/expedite/">wichaa.net/expedite</a>.</li>
+    </ul>
+  </details>
+  <details>
+    <summary><span class="en">Pictures</span><span class="th">ภาพ</span></summary>
+    <ul class="src">
+      <li>Holy card, Milan 1897 — public domain · <a href="https://commons.wikimedia.org/wiki/File:Sant%27Espedito_Martire.jpg">Commons</a></li>
+      <li>Jakub Scherz, c. 1773, Brno — photo Ondraness, CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Brno_michal_expeditus,_Scherz.jpg">Commons</a></li>
+      <li>San Expedito, Acireale, c. 1781 — public domain · <a href="https://commons.wikimedia.org/wiki/File:San_Expedito_circa_1781.jpg">Commons</a></li>
+      <li>F. X. Jungwierth after F. X. Palko, before 1790 — public domain, Universalmuseum Joanneum · <a href="https://commons.wikimedia.org/wiki/File:ContentServer-2.jpg">Commons</a></li>
+      <li>Guadalupe chapel, New Orleans — Infrogmation of New Orleans, CC BY 3.0 · <a href="https://commons.wikimedia.org/wiki/File:GuadalupeNOLAExpedite.jpg">Commons</a></li>
+      <li>Ravine Saint-Expédit — Pierre André, CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:La_R%C3%A9union_Ravine_St_Expedit.JPG">Commons</a></li>
+      <li>Chapel interior — franek2, CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Int%C3%A9rieur_chapelle_-_panoramio.jpg">Commons</a></li>
+      <li>Petit Serré oratory and altar — David Monniaux, CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Saint_Exp%C3%A9dit_Petit_Serr%C3%A9_dsc03553.jpg">Commons</a> · <a href="https://commons.wikimedia.org/wiki/File:Saint_Exp%C3%A9dit_Petit_Serr%C3%A9_dsc03555.jpg">Commons</a></li>
+      <li>Sentier des Porteurs oratory — Rémih, CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Oratory_@_Sentier_des_Porteurs_03.jpg">Commons</a></li>
+    </ul>
+  </details>
+</section>
+</main>
+
+<footer><a href="https://wichaa.net/expedite/">wichaa.net/expedite</a> · <a href="https://motdang.net/">motdang.net</a> · <a href="https://github.com/NaNoBotCo/expedite">NaNoBotCo/expedite</a> · text CC BY 4.0 · code MIT · pictures as credited</footer>
+
+<script>
+(()=>{
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const calm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const store={get(k,d){try{const v=localStorage.getItem('expedite.'+k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem('expedite.'+k,JSON.stringify(v))}catch(e){}}};
+
+/* language */
+let lang=store.get('lang',(navigator.language||'').toLowerCase().startsWith('th')?'th':'en');
+const L=(en,th)=>lang==='en'?en:lang==='th'?th:en+' · '+th;
+const LH=(en,th)=>lang==='both'?en+'<br><span class="th">'+th+'</span>':L(en,th);
+function setLang(v){lang=v;document.documentElement.dataset.lang=v;document.documentElement.lang=v==='th'?'th':'en';
+  $$('.bar .pill').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.set===v)));store.set('lang',v);redraw()}
+$$('.bar .pill').forEach(b=>b.onclick=()=>setLang(b.dataset.set));
+
+/* sky: stars and rising gold motes */
+const sky=$('#sky'),cx=sky.getContext('2d');let W=0,H=0,stars=[],motes=[];
+function fit(){const r=sky.getBoundingClientRect(),d=Math.min(devicePixelRatio||1,2);W=r.width;H=r.height;sky.width=W*d;sky.height=H*d;cx.setTransform(d,0,0,d,0,0);
+  stars=Array.from({length:Math.round(W*H/5000)},()=>({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.4+.3,p:Math.random()*6.3}));
+  motes=Array.from({length:Math.round(W/14)},()=>mote(true))}
+function mote(any){return{x:Math.random()*W,y:any?Math.random()*H:H+10,v:.2+Math.random()*.6,r:1+Math.random()*2.2,w:Math.random()*6.3}}
+function paintSky(t){cx.clearRect(0,0,W,H);
+  for(const s of stars){const a=.35+.65*Math.abs(Math.sin(s.p+t/1400));cx.fillStyle=`rgba(255,244,214,${a})`;cx.beginPath();cx.arc(s.x,s.y,s.r,0,6.3);cx.fill()}
+  for(const m of motes){m.y-=m.v;m.x+=Math.sin(m.w+t/900)*.3;if(m.y<-10)Object.assign(m,mote(false));
+    const g=cx.createRadialGradient(m.x,m.y,0,m.x,m.y,m.r*4);g.addColorStop(0,'rgba(255,214,120,.9)');g.addColorStop(1,'rgba(255,120,60,0)');cx.fillStyle=g;cx.beginPath();cx.arc(m.x,m.y,m.r*4,0,6.3);cx.fill()}}
+fit();addEventListener('resize',fit);
+if(calm)paintSky(0);else(function loop(t){paintSky(t);requestAnimationFrame(loop)})(0);
+
+/* holy card tilt */
+const card=$('#card .face');
+if(!calm&&matchMedia('(hover:hover)').matches){$('#top').addEventListener('pointermove',e=>{const r=$('#card').getBoundingClientRect();
+  const x=(e.clientX-(r.left+r.width/2))/r.width,y=(e.clientY-(r.top+r.height/2))/r.height;
+  card.style.transform=`rotateY(${Math.max(-1,Math.min(1,x))*14}deg) rotateX(${Math.max(-1,Math.min(1,-y))*10}deg)`});
+  $('#top').addEventListener('pointerleave',()=>card.style.transform='')}
+
+/* crows */
+const hero=$('#top');let turned=store.get('crows',0);
+const CROW=`<svg viewBox="0 0 118 84" aria-hidden="true"><g class="bird"><path d="M18 50c10-8 26-12 40-10 8-10 20-14 30-10l12-3-9 8c2 6 0 12-6 16-10 8-28 10-44 6L20 64l6-10z" fill="#0d0a12"/><path class="wing" d="M44 44c6-16 18-26 34-28-6 10-12 22-26 30z" fill="#1b1624"/><circle cx="88" cy="32" r="2.2" fill="#f5d27a"/></g><g><rect x="60" y="0" width="58" height="22" rx="11" fill="#b3121f" stroke="#f5d27a"/><text class="say" x="89" y="16" text-anchor="middle">cras!</text></g></svg>`;
+function crowCount(){$('#crowct').textContent=turned?L(`Crows turned to today: ${turned}`,`อีกาที่กลายเป็นวันนี้: ${turned} ตัว`):''}
+function launchCrow(){const b=document.createElement('button');b.className='crow';b.setAttribute('aria-label',L('A crow croaking cras, tomorrow. Tap to turn it to today.','อีการ้องว่าพรุ่งนี้ แตะเพื่อเปลี่ยนเป็นวันนี้'));b.innerHTML=CROW;hero.appendChild(b);
+  const r=hero.getBoundingClientRect(),y0=r.height*(.12+Math.random()*.5),dir=Math.random()<.5?1:-1,x0=dir>0?-130:r.width+10,x1=dir>0?r.width+10:-130,dur=calm?0:9000+Math.random()*5000,t0=performance.now();
+  if(dir<0)b.querySelector('.bird').setAttribute('transform','translate(118 0) scale(-1 1)');
+  let alive=true;
+  function step(t){if(!alive)return;const k=dur?(t-t0)/dur:.5;const x=x0+(x1-x0)*k,y=y0+Math.sin(k*9)*18;b.style.transform=`translate(${x}px,${y}px)`;
+    if(dur&&k>=1){b.remove();setTimeout(launchCrow,800);return}if(dur)requestAnimationFrame(step)}
+  if(calm){b.style.transform=`translate(${r.width*.62}px,${y0}px)`}else requestAnimationFrame(step);
+  b.onclick=()=>{alive=false;const br=b.getBoundingClientRect(),hr=hero.getBoundingClientRect();burst(br.left-hr.left+50,br.top-hr.top+40);b.remove();turned++;store.set('crows',turned);crowCount();setTimeout(launchCrow,calm?600:1800)}}
+function burst(x,y){const word=lang==='th'?['ว','ั','น','นี้']:['H','O','D','I','E'];word.forEach((ch,i)=>{const s=document.createElement('span');s.className='spark';s.textContent=ch;hero.appendChild(s);
+  const a=-Math.PI/2+(i-(word.length-1)/2)*.5,d=90+Math.random()*30;s.style.left=x+'px';s.style.top=y+'px';
+  if(calm){s.style.transform=`translate(${Math.cos(a)*d}px,${Math.sin(a)*d}px)`;setTimeout(()=>s.remove(),1200);return}
+  s.animate([{transform:'translate(0,0) scale(.3)',opacity:1},{transform:`translate(${Math.cos(a)*d}px,${Math.sin(a)*d}px) scale(1.2)`,opacity:1,offset:.6},{transform:`translate(${Math.cos(a)*d}px,${Math.sin(a)*d-40}px) scale(1)`,opacity:0}],{duration:1500,easing:'cubic-bezier(.2,.8,.3,1)'}).onfinish=()=>s.remove()})}
+launchCrow();if(!calm)setTimeout(launchCrow,4000);
+
+/* cras -> hodie */
+let tasks=store.get('tasks',[]);
+function renderTasks(fresh){const ul=$('#tasks');ul.innerHTML='';
+  tasks.forEach((t,i)=>{const li=document.createElement('li');li.className='task'+(t.done?' done':'')+(fresh&&fresh.includes(i)?' new':'');
+    li.innerHTML=`<div class="seal">HODIE</div><div><div class="old">CRAS</div><div class="txt"></div></div><input type="checkbox" aria-label="${L('Done','เสร็จแล้ว')}">`;
+    li.querySelector('.txt').textContent=t.t;const cb=li.querySelector('input');cb.checked=!!t.done;
+    cb.onchange=()=>{t.done=cb.checked;store.set('tasks',tasks);li.classList.toggle('done',t.done);tally();flowers(true)};ul.appendChild(li)});
+  tally();flowers(false)}
+function tally(){const n=tasks.length,d=tasks.filter(t=>t.done).length;$('#tally').textContent=n?L(`Today: ${d} of ${n} done`,`วันนี้: เสร็จ ${d} จาก ${n}`):''}
+$('#hodie').onclick=()=>{const lines=$('#list').value.split('\n').map(s=>s.trim()).filter(Boolean);if(!lines.length){$('#list').focus();return}
+  const start=tasks.length;tasks=tasks.concat(lines.map(t=>({t,done:false})));$('#list').value='';store.set('tasks',tasks);
+  renderTasks(lines.map((_,k)=>start+k))};
+$('#clear').onclick=()=>{tasks=[];store.set('tasks',tasks);renderTasks()};
+
+/* altar */
+const OFFERS=[
+ ['fanta','🥤','Red Fanta','แฟนต้าแดง','Thailand: red soda with a straw in it, left at the spirit house.','เมืองไทย: น้ำแดงเสียบหลอด วางไว้ที่ศาลพระภูมิ'],
+ ['incense','<svg width="28" height="28" viewBox="0 0 28 28"><path d="M6 26h16l-2-6H8z" fill="#b8841c"/><path d="M10 20 8 4M14 20V3M18 20l2-16" stroke="#b3121f" stroke-width="2"/><circle cx="8" cy="4" r="1.6" fill="#ff9d2a"/><circle cx="14" cy="3" r="1.6" fill="#ff9d2a"/><circle cx="20" cy="4" r="1.6" fill="#ff9d2a"/></svg>','Incense','ธูป','Lit at Thai spirit houses; sold in his name in New Orleans supply shops.','จุดที่ศาลพระภูมิ และมีธูปชื่อท่านขายในร้านเครื่องบูชาที่นิวออร์ลีนส์'],
+ ['flowers','🌺','Red flowers','ดอกไม้แดง','New Orleans, recorded 1935–39; the colour of Réunion’s shrines.','นิวออร์ลีนส์ บันทึกไว้ปี 1935–39 และเป็นสีของศาลที่เรอูนียง'],
+ ['khanom','🍡','Thai desserts','ขนมไทย','Sweets for the spirit house.','ขนมหวานถวายศาล'],
+ ['cake','🍰','Pound cake','เค้กปอนด์','New Orleans: feed the saint, at his feet.','นิวออร์ลีนส์: เค้กวางแทบเท้าท่าน'],
+ ['candle','🕯️','Red candle','เทียนแดง','Vigil candles sold "for luck in a hurry".','เทียนบูชาที่ขายในชื่อ "โชคแบบเร่งด่วน"'],
+ ['water','💧','Water','น้ำเปล่า','On home altars.','บนหิ้งบูชาในบ้าน'],
+ ['coins','🪙','Coins','เหรียญ','On home altars.','บนหิ้งบูชาในบ้าน']];
+let placed=new Set(store.get('altar',[]));
+function renderOffers(){const box=$('#offers');box.innerHTML='';
+  OFFERS.forEach(([k,ico,en,th,sen,sth])=>{const b=document.createElement('button');b.className='offer';b.setAttribute('aria-pressed',String(placed.has(k)));
+    b.innerHTML=`<span class="ico" aria-hidden="true">${ico}</span><span>${LH(en,th)}</span><small>${LH(sen,sth)}</small>`;
+    b.onclick=()=>{placed.has(k)?placed.delete(k):placed.add(k);store.set('altar',[...placed]);paintAltar();renderOffers()};box.appendChild(b)})}
+function paintAltar(){$$('#altar .off[data-o]').forEach(g=>g.classList.toggle('on',placed.has(g.dataset.o)));
+  if(placed.has('khanom')&&placed.has('cake'))$('#altar [data-o="cake"]').setAttribute('transform','translate(0 -18)');else $('#altar [data-o="cake"]').removeAttribute('transform');
+  const lvl=placed.size+tasks.filter(t=>t.done).length*.5;$('#glow').setAttribute('opacity',String(Math.min(.95,.15+lvl*.1)))}
+function flowers(anim){const g=$('#doneflowers'),n=Math.min(tasks.filter(t=>t.done).length,24);let s='';
+  if(n)s+=`<path d="M86 262Q200 ${262+2*Math.min(40,8+n*2)} 314 262" fill="none" stroke="#ffe39a" stroke-width="1.5"/>`;
+  for(let i=0;i<n;i++){const k=(i+1)/(n+1),sag=Math.min(40,8+n*2),x=86+228*k,y=262+sag*4*k*(1-k)*.5*2;
+    s+=`<g class="off on"><circle cx="${x}" cy="${y}" r="7" fill="#ff2a3d" stroke="#ffe39a" stroke-width="1.2"/><circle cx="${x}" cy="${y}" r="2.4" fill="#fff4c2"/></g>`}
+  g.innerHTML=s;paintAltar()}
+$('#unset').onclick=()=>{placed.clear();store.set('altar',[]);paintAltar();renderOffers()};
+
+/* his days */
+const DAY=864e5;
+function mid(d){return new Date(d.getFullYear(),d.getMonth(),d.getDate())}
+function fmt(d){return lang==='th'?d.toLocaleDateString('th-TH',{weekday:'long',day:'numeric',month:'long'}):lang==='en'?d.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'}):d.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'})+' · '+d.toLocaleDateString('th-TH',{weekday:'short',day:'numeric',month:'short'})}
+function inDays(n){return n===0?L('today','วันนี้'):n===1?L('tomorrow','พรุ่งนี้'):L(`in ${n} days`,`อีก ${n} วัน`)}
+function days(){const now=mid(new Date());
+  const wed=new Date(now);wed.setDate(now.getDate()+((3-now.getDay()+7)%7));
+  let n19=new Date(now.getFullYear(),now.getMonth(),19);if(n19<now)n19=new Date(now.getFullYear(),now.getMonth()+1,19);
+  let feast=new Date(now.getFullYear(),3,19);if(feast<now)feast=new Date(now.getFullYear()+1,3,19);
+  const tiles=[[wed,L('Wednesday','วันพุธ'),LH('Mercury’s day: messenger, speed. Hoodoo works with him on Wednesdays. In Thai, the day of พระพุธ, the same planet.','วันของดาวพุธ ผู้ส่งสารและความเร็ว สายฮูดูบูชาท่านวันพุธ ภาษาไทยก็เรียกตามพระพุธ ดาวดวงเดียวกัน')],
+    [n19,L('The 19th','วันที่ 19'),LH('His day, every month.','วันของท่าน ทุกเดือน')],
+    [feast,L('19 April','19 เมษายน'),LH('His feast.','วันฉลองของท่าน')]];
+  $('#daytiles').innerHTML=tiles.map(([d,l,s])=>{const n=Math.round((d-now)/DAY);return `<div class="day"><div class="l">${l}</div><div class="n${n===0?' today':''}">${n===0?'✦':n}</div><div class="d">${inDays(n)} · ${fmt(d)}</div><p class="small" style="margin:8px 0 0">${s}</p></div>`}).join('');
+  $('#wed').innerHTML=now.getDay()===3?`<span class="wed">${L('Today is Wednesday','วันนี้วันพุธ')}</span>`:'';
+  /* novena ending on the next 19th that leaves room to start today or later */
+  let end=new Date(now.getFullYear(),now.getMonth(),19);if((end-now)/DAY<8)end=new Date(now.getFullYear(),now.getMonth()+1,19);
+  const start=new Date(end);start.setDate(end.getDate()-8);
+  const running=new Date(now.getFullYear(),now.getMonth(),19),rs=new Date(running);rs.setDate(19-8);
+  let beads='',text;
+  if(now>=rs&&now<=running){const k=Math.round((now-rs)/DAY);text=L(`A novena begun on ${fmt(rs)} is on day ${k+1} of 9 today, ending ${fmt(running)}.`,`ถ้าเริ่มโนวีนาเมื่อ${fmt(rs)} วันนี้คือวันที่ ${k+1} จาก 9 จบ${fmt(running)}`);
+    for(let i=0;i<9;i++)beads+=`<span class="bead ${i<k?'past':i===k?'now':''}">${i+1}</span>`}
+  else{text=L(`To end on ${fmt(end)}, begin on ${fmt(start)}.`,`ถ้าจะให้จบ${fmt(end)} ให้เริ่ม${fmt(start)}`);for(let i=0;i<9;i++)beads+=`<span class="bead">${i+1}</span>`}
+  $('#novtext').textContent=text;$('#beads').innerHTML=beads}
+
+/* thank-you notice */
+function notice(){const ini=$('#ini').value.trim()||'N. P.',f=$('#for').value.trim(),today=new Date();
+  const en=`THANKS to St. Expedite for ${f?f:'favor granted'}. Publication promised.`,th=`ขอบคุณนักบุญเอ็กซ์เปดิต ${f?'สำหรับ'+f:'ที่ประทานตามที่ขอ'} ตามที่สัญญาไว้ว่าจะประกาศ`;
+  return{ini,en,th,date:today.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'})}}
+function renderClip(){const n=notice(),c=$('#clip');c.innerHTML='';
+  const mast=document.createElement('div');mast.className='mast';mast.innerHTML='<span>Personal</span><span></span>';mast.lastChild.textContent=n.date;c.appendChild(mast);
+  if(lang!=='th'){const p=document.createElement('p');p.className='big';p.textContent=n.en;c.appendChild(p)}
+  if(lang!=='en'){const p=document.createElement('p');p.className='big thn';p.style.fontSize='19px';p.textContent=n.th;c.appendChild(p)}
+  const s=document.createElement('p');s.style.cssText='text-align:right;margin:6px 0 0;font-style:italic';s.textContent='— '+n.ini;c.appendChild(s)}
+$('#ini').oninput=renderClip;$('#for').oninput=renderClip;
+$('#copy').onclick=async()=>{const n=notice(),txt=(lang==='th'?n.th:lang==='en'?n.en:n.en+'\n'+n.th)+' — '+n.ini;
+  try{await navigator.clipboard.writeText(txt);flash($('#copy'),L('Copied','คัดลอกแล้ว'))}catch(e){flash($('#copy'),txt)}};
+function flash(b,t){const o=b.innerHTML;b.textContent=t;setTimeout(()=>b.innerHTML=o,1600)}
+$('#save').onclick=async()=>{const n=notice(),cv=document.createElement('canvas'),w=900,pad=50;cv.width=w;cv.height=560;const g=cv.getContext('2d');
+  try{await document.fonts.load('32px "Noto Serif Thai"')}catch(e){}
+  g.fillStyle='#f1e6cc';g.fillRect(0,0,w,560);g.fillStyle='#1f1812';g.font='bold 22px Georgia';g.fillText('PERSONAL',pad,70);
+  g.textAlign='right';g.fillText(n.date,w-pad,70);g.textAlign='left';g.fillRect(pad,86,w-2*pad,2);
+  let y=150;function wrap(t,font,lh){g.font=font;const words=t.split(/(\s+)/);let line='';for(const wd of words){const test=line+wd;if(g.measureText(test).width>w-2*pad&&line){g.fillText(line.trim(),pad,y);y+=lh;line=wd.trimStart()}else line=test}g.fillText(line.trim(),pad,y);y+=lh*1.3}
+  if(lang!=='th')wrap(n.en,'900 44px Georgia',54);if(lang!=='en')wrap(n.th,'600 38px "Noto Serif Thai", Tahoma',56);
+  g.font='italic 32px Georgia';g.textAlign='right';g.fillText('— '+n.ini,w-pad,y+10);
+  cv.height=Math.max(300,y+60);const cv2=document.createElement('canvas');cv2.width=w;cv2.height=cv.height;const g2=cv2.getContext('2d');g2.drawImage(cv,0,0);
+  const a=document.createElement('a');a.download='thanks-st-expedite.png';a.href=cv2.toDataURL('image/png');a.click()};
+
+/* a thousand cards */
+const rain=$('#rain'),rc=rain.getContext('2d');let cards=[],count=0,running=false;
+$('#scatter').onclick=()=>{const r=rain.getBoundingClientRect(),d=Math.min(devicePixelRatio||1,2);rain.width=r.width*d;rain.height=r.height*d;rc.setTransform(d,0,0,d,0,0);
+  cards=[];count=0;$('#milct').textContent='0';
+  if(calm){count=1000;$('#milct').textContent='1,000';return}
+  const w=r.width,h=r.height;let spawned=0;
+  if(running)return;running=true;
+  (function tick(){for(let i=0;i<14&&spawned<1000;i++,spawned++)cards.push({x:Math.random()*w,y:-12-Math.random()*40,vy:1.2+Math.random()*2.2,vx:(Math.random()-.5)*1.2,a:Math.random()*6.3,va:(Math.random()-.5)*.2,land:h-10-Math.random()*90,c:Math.random()<.5?'#fff6dc':'#ffe27a'});
+    rc.clearRect(0,0,w,h);
+    for(const c of cards){if(c.y<c.land){c.y+=c.vy;c.x+=c.vx;c.a+=c.va;if(c.y>=c.land){count++}}
+      rc.save();rc.translate(c.x,c.y);rc.rotate(c.a);rc.fillStyle=c.c;rc.fillRect(-5,-7,10,14);rc.fillStyle='#b3121f';rc.fillRect(-1,-4,2,7);rc.fillRect(-3,-2,6,2);rc.restore()}
+    $('#milct').textContent=count.toLocaleString('en-US');
+    if(count<1000)requestAnimationFrame(tick);else running=false})()};
+
+/* crate */
+$('#cratebtn').onclick=()=>{const b=$('#cratebtn'),o=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',String(o));$('#cratetext').hidden=!o};
+
+function redraw(){crowCount();renderTasks();renderOffers();paintAltar();days();renderClip()}
+setLang(lang);
+})();
+</script>
+</body>
+</html>
