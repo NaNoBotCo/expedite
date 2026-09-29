@@ -1,0 +1,9 @@
+# Hodie · Saint Expedite
+
+> Saint Expedite, patron of urgent causes: his cross reads HODIE (today), the crow under his foot CRAS (tomorrow). One page, English and Thai.
+
+- Toys: catch the crow; turn a list from tomorrow to today; set a red spirit house (red Fanta, incense, flowers, Thai desserts, pound cake, candle, water, coins); his days (Wednesday, the 19th, 19 April) and a novena counter; a newspaper thank-you notice; a thousand Brazilian prayer cards; the crate legend.
+- The picture's history: Brno c. 1773, Acireale 1781, Munich before 1790 (James 4:13, "Mercabimur et lucrum faciemus"), Milan 1897.
+- Worlds: Réunion's red oratories, New Orleans, Buenos Aires and São Paulo.
+- Research base: https://github.com/NaNoBotCo/st-expedite-wiki
+- Licence: text CC BY 4.0, code MIT, pictures as credited on the page.
